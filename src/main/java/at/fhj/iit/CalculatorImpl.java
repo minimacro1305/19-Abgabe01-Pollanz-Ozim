@@ -10,7 +10,14 @@ public class CalculatorImpl implements Calculator {
     }
 
     public int getMaximum() {
-        return 0;
+
+        int max = this.list.get(0);
+        for(int i= 0; i> this.list.size(); i++){
+            if(max<this.list.get(i)){
+                max=this.list.get(i);
+            }
+        }
+        return max;
     }
 
     public int getMinimum() {

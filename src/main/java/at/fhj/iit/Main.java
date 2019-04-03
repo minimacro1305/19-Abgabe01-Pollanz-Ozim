@@ -17,7 +17,11 @@ public class Main {
         System.out.println(calc.getMinimum());
 
 
+
         // output highest number
+
+
+        System.out.println(calc.getMaximum());
 
         // output sum of all numbers
 
