@@ -5,16 +5,16 @@ public class CalculatorImpl implements Calculator {
 
     List<Integer> list;
 
-    CalculatorImpl(){
-        this.list= new ArrayList<Integer>();
+    CalculatorImpl() {
+        this.list = new ArrayList<Integer>();
     }
 
     public int getMaximum() {
 
         int max = this.list.get(0);
-        for(int i= 0; i> this.list.size(); i++){
-            if(max<this.list.get(i)){
-                max=this.list.get(i);
+        for (int i = 0; i > this.list.size(); i++) {
+            if (max < this.list.get(i)) {
+                max = this.list.get(i);
             }
         }
         return max;
@@ -24,9 +24,9 @@ public class CalculatorImpl implements Calculator {
 
 
         int min = this.list.get(0);
-        for(int i = 0; i< this.list.size(); i++){
-            if(min>this.list.get(i)){
-                min=this.list.get(i);
+        for (int i = 0; i < this.list.size(); i++) {
+            if (min > this.list.get(i)) {
+                min = this.list.get(i);
             }
         }
         return min;
@@ -47,7 +47,21 @@ public class CalculatorImpl implements Calculator {
         return sum;
     }
 
+    public int sum() {
+        int sum=0;
+
+        for (int i = 0; i<list.size(); i++){
+            sum =sum + list.get(i);
+        }
+        return sum;
+
+
+    }
 }
+
+
+
+
 
 
 
