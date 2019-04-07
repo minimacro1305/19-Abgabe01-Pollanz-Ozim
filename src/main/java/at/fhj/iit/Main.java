@@ -24,6 +24,7 @@ public class Main {
         System.out.println(calc.getMaximum());
 
         // output sum of all numbers
+        System.out.println(((CalculatorImpl) calc).sum());
 
     }
 

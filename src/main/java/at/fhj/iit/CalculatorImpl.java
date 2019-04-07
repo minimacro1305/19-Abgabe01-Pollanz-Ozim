@@ -35,6 +35,18 @@ public class CalculatorImpl implements Calculator {
     public void addValue(int value) {
         this.list.add(value);
     }
+
+
+    public int sum(){
+
+        int sum=0;
+        for(int i=0; i<list.size();i++){
+            sum+=list.get(i);
+        }
+
+        return sum;
+    }
+
 }
 
 
