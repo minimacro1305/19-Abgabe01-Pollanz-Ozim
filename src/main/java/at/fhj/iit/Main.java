@@ -26,6 +26,9 @@ public class Main {
         // output sum of all numbers
         System.out.println(((CalculatorImpl) calc).sum());
 
+        //output 2 sum of all numbers
+        System.out.println(((CalculatorImpl) calc).sum());
     }
 
 }
+
